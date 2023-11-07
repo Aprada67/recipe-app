@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64F77A72AF7B9DC0052ED44 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F77A62AF7B9DC0052ED44 /* RecipeTabView.swift */; };
 		B6651F9D2AEB12DB0033B3FA /* Recipe_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6651F9C2AEB12DB0033B3FA /* Recipe_List_AppApp.swift */; };
 		B6651F9F2AEB12DB0033B3FA /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6651F9E2AEB12DB0033B3FA /* RecipeListView.swift */; };
 		B6651FA12AEB12DC0033B3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6651FA02AEB12DC0033B3FA /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B64F77A62AF7B9DC0052ED44 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		B6651F992AEB12DB0033B3FA /* Recipe List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6651F9C2AEB12DB0033B3FA /* Recipe_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_List_AppApp.swift; sourceTree = "<group>"; };
 		B6651F9E2AEB12DB0033B3FA /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		B6651FAC2AEB140C0033B3FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B64F77A62AF7B9DC0052ED44 /* RecipeTabView.swift */,
 				B6651F9E2AEB12DB0033B3FA /* RecipeListView.swift */,
 				B66926532AEDAAF6008D141B /* RecipeDetailView.swift */,
 			);
@@ -199,6 +202,7 @@
 				B6651F9F2AEB12DB0033B3FA /* RecipeListView.swift in Sources */,
 				B6651F9D2AEB12DB0033B3FA /* Recipe_List_AppApp.swift in Sources */,
 				B6651FB72AEB23CF0033B3FA /* DataService.swift in Sources */,
+				B64F77A72AF7B9DC0052ED44 /* RecipeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
