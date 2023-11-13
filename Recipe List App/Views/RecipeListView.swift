@@ -11,27 +11,45 @@ struct RecipeListView: View {
     
     @EnvironmentObject var model:RecipeModel
     
-    var body: some View {   
+    var body: some View {
         
         NavigationStack {
             
-            List(model.recipes) { r in
+            VStack (alignment: .leading) {
                 
-                NavigationLink  {
-                    RecipeDetailView(recipe: r)
-                } label: {
-                    HStack (spacing: 20) {
-                        Image(r.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 50, height: 50, alignment: .center)
-                            .clipped()
-                            .clipShape(.buttonBorder)
-                        Text(r.name)
+                Text("All Recipes")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding(.top, 40)
+                
+                ScrollView {
+                    
+                    LazyVStack (alignment: .leading) {
+                        
+                        ForEach(model.recipes) { r in
+                            
+                            NavigationLink  {
+                                RecipeDetailView(recipe: r)
+                            } label: {
+                                HStack (spacing: 20) {
+                                    Image(r.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 50, height: 50, alignment: .center)
+                                        .clipped()
+                                        .clipShape(.buttonBorder)
+                                    Text(r.name)
+                                        .foregroundStyle(.black)
+                                }
+                            }
+                        }
+                        
                     }
+                    
                 }
+                
             }
-            .navigationTitle("Recipes")
+            .padding(.leading)
         }
     }
 }
